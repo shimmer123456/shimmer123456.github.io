@@ -1,0 +1,441 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>css基础 | shimmer's web</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 共 $1 行","copy":"复制","copyFinish":"完成","expand":"展开"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1>css基础</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2022-11-24T00:03:12.000Z" id="date"> 2022-11-24</time></div></span><br><span>Last Update: <div class="control"><time datetime="2022-11-24T06:04:37.688Z" id="updated"> 2022-11-24</time></div></span></div></div><hr><div id="post-content"><h1 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h1><h2 id="1-初识CSS3"><a href="#1-初识CSS3" class="headerlink" title="1.初识CSS3"></a>1.初识CSS3</h2><p>CSS3给我们带来了什么好处呢？简单的说，CSS3把很多以前需要使用图片和脚本来实现的效果、甚至动画效果，只需要短短几行代码就能搞定。比如圆角，图片边框，文字阴影和盒阴影，过渡、动画等。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">选择器<br>以前我们通常用class、 ID 或 tagname 来选择HTML元素，CSS3的选择器强大的难以置信。它们可以减少在标签中的class和ID的数量更方便的维护样式表、更好的实现结构与表现的分离。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">圆角效果<br>以前做圆角通常使用背景图片，或繁琐的元素拼凑，现在很简单了 border-radius 帮你轻松搞定。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">块阴影与文字阴影<br>可以对任意DIV和文字增加投影效果。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">色彩<br>CSS3支持更多的颜色和更广泛的颜色定义。新颜色CSS3支持HSL ， CMYK ，HSLA and RGBA。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">渐变效果<br>以前只能用Photoshop做出的图片渐变效果，现在可以用CCS写出来了。IE中的滤镜也可以实现。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">个性化字体<br>网页上的字体太单一？使用@Font-Face 轻松实现定制字体。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">多背景图<br>一个元素上添加多层背景图片。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">边框背景图<br>边框应用背景图片。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">变形处理<br>你可以对HTML元素进行旋转、缩放、倾斜、移动、甚至以前只能用JavaScript实现的强大动画。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">多栏布局<br>可以让你不用使用多个div标签就能实现多栏布局。浏览器解释这个属性并生成多栏，让文本实现一个仿报纸的多栏结构。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">媒体查询<br>针对不同屏幕分辨率，应用不同的样式。<br></code></pre></td></tr></table></figure>
+
+<p>等等 ……</p>
+<h2 id="2-边框"><a href="#2-边框" class="headerlink" title="2. 边框"></a>2. 边框</h2><h3 id="2-1-圆角效果-border-radius"><a href="#2-1-圆角效果-border-radius" class="headerlink" title="2.1 圆角效果 border-radius"></a>2.1 圆角效果 border-radius</h3><p> <strong>border-radius</strong>是向元素添加圆角边框。</p>
+<p><strong>使用方法：</strong></p>
+<p><strong>border-radius:10px;</strong> &#x2F;* 所有角都使用半径为10px的圆角 *&#x2F; </p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e216d2000195ef01110111.jpg"><img src="https://img.mukewang.com/52e216d2000195ef01110111.jpg" alt="img"></a></p>
+<p><strong>border-radius: 5px 4px 3px 2px;</strong> &#x2F;* 四个半径值分别是左上角、右上角、右下角和左下角，<strong>顺时针</strong> *&#x2F; </p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e216f9000131a201110111.jpg"><img src="https://img.mukewang.com/52e216f9000131a201110111.jpg" alt="img"></a></p>
+<p>不要以为border-radius的值只能用<strong>px</strong>单位，你还可以用<strong>百分比</strong>或者<strong>em</strong>，但兼容性目前还不太好。</p>
+<p><strong>实心上半圆：</strong></p>
+<p>方法：把高度(height)设为宽度（width）的一半，并且只设置左上角和右上角的半径与元素的高度一致（大于也是可以的）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">div&#123;<br>    height:50px;/*是width的一半*/<br>    width:100px;<br>    background:#9da;<br>    border-radius:50px 50px 0 0;/*半径至少设置为height的值*/<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>实心圆：</strong><br>方法：把宽度（width）与高度(height)值设置为一致（也就是正方形），并且四个圆角值都设置为它们值的一半。如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">div&#123;<br>    height:100px;/*与width设置一致*/<br>    width:100px;<br>    background:#9da;<br>    border-radius:50px;/*四个圆角值都设置为宽度或高度值的一半*/<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="2-2-阴影-box-shadow（一）"><a href="#2-2-阴影-box-shadow（一）" class="headerlink" title="2.2 阴影 box-shadow（一）"></a>2.2 阴影 box-shadow（一）</h3><p>box-shadow是向盒子添加阴影。支持添加一个或者多个。</p>
+<p>很简单的一段代码，就实现了投影效果，酷毙了。我们来看下语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式];<br>参数介绍：<br></code></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/54292d620001ffb107080250.jpg"><img src="https://img.mukewang.com/54292d620001ffb107080250.jpg" alt="img"></a></p>
+<p>注意：inset 可以写在参数的第一个或最后一个，其它位置是无效的。</p>
+<p><strong>为元素设置外阴影：</strong></p>
+<p>示例代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.box_shadow&#123;<br>  box-shadow:4px 2px 6px #333333; <br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>为元素设置内阴影：</strong></p>
+<p>示例代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.box_shadow&#123;<br>  box-shadow:4px 2px 6px #333333 inset; <br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>添加多个阴影</strong>：</p>
+<p>以上的语法的介绍，就这么简单，如果添加多个阴影，只需用逗号隔开即可。如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.box_shadow&#123;<br>    box-shadow:4px 2px 6px #f00, -4px -2px 6px #000, 0px 0px 12px 5px #33CC00 inset;<br>&#125;<br>效果：<br></code></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e21d210001356d01170116.jpg"><img src="https://img.mukewang.com/52e21d210001356d01170116.jpg" alt="img"></a></p>
+<h3 id="2-3-阴影-box-shadow（二）"><a href="#2-3-阴影-box-shadow（二）" class="headerlink" title="2.3 阴影 box-shadow（二）"></a>2.3 阴影 box-shadow（二）</h3><p><strong>1、阴影模糊半径与阴影扩展半径的区别</strong></p>
+<p>阴影模糊半径：此参数可选，其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；</p>
+<p>阴影扩展半径：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值时，则缩小；</p>
+<p><strong>2、X轴偏移量和Y轴偏移量值可以设置为负数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式];<br></code></pre></td></tr></table></figure>
+
+<p>X轴偏移量为负数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.boxshadow-outset&#123;<br>    width:100px;<br>    height:100px;<br>    box-shadow:-4px 4px 6px #666;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>效果图：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/548fd91c000140a901540143.jpg"><img src="https://img.mukewang.com/548fd91c000140a901540143.jpg" alt="img"></a></p>
+<p>Y轴偏移量为负数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.boxshadow-outset&#123;<br>    width:100px;<br>    height:100px;<br>    box-shadow:4px -4px 6px #666;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>效果图：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/548fd93e00011dd101570142.jpg"><img src="https://img.mukewang.com/548fd93e00011dd101570142.jpg" alt="img"></a></p>
+<h3 id="2-4-为边框应用图片-border-image"><a href="#2-4-为边框应用图片-border-image" class="headerlink" title="2.4 为边框应用图片 border-image"></a>2.4 为边框应用图片 border-image</h3><p>顾名思义就是为边框应用背景图片，它和我们常用的background属性比较相似。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background:url(xx.jpg) 10px 20px no-repeat;<br></code></pre></td></tr></table></figure>
+
+<p>但是又比背景图片复杂一些。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">想象一下：一个矩形，有四个边框。如果应用了边框图片，图片该怎么分布呢？ 图片会自动被切割分成四等分。用于四个边框。<br><br>可以理解为它是一个切片工具，会自动把用做边框的图片切割。怎么切割呢？为了方便理解，做了一张特殊的图片，由9个矩形（70*70像素）拼成的一张图（210*210像素），并标注好序号，是不是像传说中的九宫图，如下：<br></code></pre></td></tr></table></figure>
+
+<p>根据border-image的语法：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e2201a0001b1e004720260.jpg"><img src="https://img.mukewang.com/52e2201a0001b1e004720260.jpg" alt="img"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">#border-image&#123;<br>   background:#F4FFFA;<br>   width:210px; height:210px; border:70px solid #ddd;<br>   border-image:url(borderimg.png) 70 repeat  <br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e220780001091a03530354.jpg"><img src="https://img.mukewang.com/52e220780001091a03530354.jpg" alt="img"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">从序号可以看出div的四个角分别对应了背景图片的四个角。而2,4,6,8 被重复。5在哪？因为是从四周向中心切割图片的所以，5显示不出来。而在chrome浏览器中5是存在的，下图的样子：<br><br><br><br>repeat的意思就是重复，目前因为是刚好被整除，效果看不出来。如果改下DIV的宽高，再来看重复的效果：<br></code></pre></td></tr></table></figure>
+
+<p>边角部分为裁掉了，可见<strong>repeat</strong>就是一直重复，然后超出部分剪裁掉，而且是居中开始重复。</p>
+<p><strong>Round 参数</strong>：Round可以理解为圆满的铺满。为了实现圆满所以会压缩（或拉伸）；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">#border-image &#123;<br><br>     width:170px;<br><br>     height:170px;<br><br>     border:70px solid;<br><br>     border-image:url(borderimg.png) 70 round;<br><br> &#125;<br></code></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e2216700014c4103190312.jpg"><img src="https://img.mukewang.com/52e2216700014c4103190312.jpg" alt="img"></a></p>
+<p>可见图片被压扁了。</p>
+<p>Stretch 很好理解就是拉伸，有多长拉多长。有多远“滚”多远。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">border-image:url(borderimg.png) 70 stretch<br></code></pre></td></tr></table></figure>
+
+<p>看一下效果：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/52e2218d0001d45403530366.jpg"><img src="https://img.mukewang.com/52e2218d0001d45403530366.jpg" alt="img"></a></p>
+<p>2,4,6,8分别被拉伸显示。</p>
+<p>注意：Chrome下，中间部分也会被拉伸，webkit浏览器对于round属性和repeat属性似乎没有区分，显示效果是一样的。</p>
+<p>Firefox 26.0 下是可以准确区分的。</p>
+<h2 id="3-颜色相关"><a href="#3-颜色相关" class="headerlink" title="3. 颜色相关"></a>3. 颜色相关</h2><h3 id="3-1-颜色之RGBA"><a href="#3-1-颜色之RGBA" class="headerlink" title="3.1 颜色之RGBA"></a>3.1 颜色之RGBA</h3><p>RGB是一种色彩标准，是由红(R)、绿(G)、蓝(B)的变化以及相互叠加来得到各式各样的颜色。RGBA是在RGB的基础上增加了控制<strong>alpha</strong>透明度的参数。</p>
+<p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">color：rgba(R,G,B,A)<br></code></pre></td></tr></table></figure>
+
+<p>以上R、G、B三个参数，正整数值的取值范围为：0 - 255。百分数值的取值范围为：0.0% - 100.0%。超出范围的数值将被截至其最接近的取值极限。并非所有浏览器都支持使用百分数值。A为透明度参数，取值在0~1之间，不可为负值。</p>
+<p>代码示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background-color:rgba(100,120,60,0.5);<br></code></pre></td></tr></table></figure>
+
+<h3 id="3-2-渐变色彩"><a href="#3-2-渐变色彩" class="headerlink" title="3.2 渐变色彩"></a>3.2 渐变色彩</h3><p><strong>CSS3 Gradient</strong> 分为**线性渐变(linear)<strong>和</strong>径向渐变(radial)**。由于不同的渲染引擎实现渐变的语法不同，这里我们只针对线性渐变的 W3C 标准语法来分析其用法，其余大家可以查阅相关资料。W3C 语法已经得到了 IE10+、Firefox19.0+、Chrome26.0+ 和 Opera12.1+等浏览器的支持。</p>
+<p>这一小节我们来说一下<strong>线性渐变：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/54b72b2e0001500103790158.jpg"><img src="https://img.mukewang.com/54b72b2e0001500103790158.jpg" alt="img"></a></p>
+<p><strong>参数：</strong></p>
+<p>第一个参数:<strong>指定渐变方向</strong>，可以用“<strong>角度</strong>”的关键词或<strong>“英文”</strong>来表示：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/542a25da00017e9406980223.jpg"><img src="https://img.mukewang.com/542a25da00017e9406980223.jpg" alt="img"></a></p>
+<p>（单击图片可放大）</p>
+<p>第一个参数省略时，默认为“180deg”，等同于“to bottom”。</p>
+<p>第二个和第三个参数，<strong>表示颜色的起始点和结束点</strong>，可以有多个颜色值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background-image:linear-gradient(to left, red, orange,yellow,green,blue,indigo,violet);<br></code></pre></td></tr></table></figure>
+
+<p>效果图：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/54b72c080001611c04230192.jpg"><img src="https://img.mukewang.com/54b72c080001611c04230192.jpg" alt="img"></a></p>
+<h2 id="4-文字与字体"><a href="#4-文字与字体" class="headerlink" title="4. 文字与字体"></a>4. 文字与字体</h2><h3 id="4-1-text-overflow-与-word-wrap"><a href="#4-1-text-overflow-与-word-wrap" class="headerlink" title="4.1 text-overflow 与 word-wrap"></a>4.1 text-overflow 与 word-wrap</h3><p><strong>text-overflow</strong>用来设置是否使用一个<strong>省略标记</strong>（…）标示对象内文本的溢出。</p>
+<p>语法：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/53070cc00001a5bc06000200.jpg"><img src="https://img.mukewang.com/53070cc00001a5bc06000200.jpg" alt="img"></a></p>
+<p>但是<strong>text-overflow</strong>只是用来说明文字溢出时用什么方式显示，要实现溢出时产生<strong>省略号</strong>的效果，还须定义<strong>强制文本在一行内显示</strong>（white-space:nowrap）及<strong>溢出内容为隐藏</strong>（overflow:hidden），只有这样才能实现<strong>溢出文本显示省略号</strong>的效果，代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">text-overflow:ellipsis; <br>overflow:hidden; <br>white-space:nowrap; <br></code></pre></td></tr></table></figure>
+
+<p>同时，<strong>word-wrap</strong>也可以用来设置<strong>文本行为</strong>，当前行超过指定容器的边界时是否断开转行。</p>
+<p>语法：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/53070cf700018a2b06000200.jpg"><img src="https://img.mukewang.com/53070cf700018a2b06000200.jpg" alt="img"></a></p>
+<p><strong>normal</strong>为浏览器默认值，<strong>break-word</strong>设置在<strong>长单词</strong>或 <strong>URL地址</strong>内部进行换行，此属性不常用，用浏览器默认值即可。</p>
+<h3 id="4-2-嵌入字体-font-face"><a href="#4-2-嵌入字体-font-face" class="headerlink" title="4.2 嵌入字体@font-face"></a>4.2 嵌入字体@font-face</h3><p><strong>@font-face</strong>能够加载服务器端的字体文件，让浏览器端可以显示用户电脑里没有安装的字体。</p>
+<p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">@font-face &#123;<br>    font-family : 字体名称;<br>    src : 字体文件在服务器上的相对或绝对路径;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>这样设置之后，就可以像使用普通字体一样在<strong>（font-*）</strong>中设置字体样式。</p>
+<p>比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">p &#123;<br>    font-size :12px;<br>    font-family : &quot;My Font&quot;;<br>    /*必须项，设置@font-face中font-family同样的值*/<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="4-3-文本阴影text-shadow"><a href="#4-3-文本阴影text-shadow" class="headerlink" title="4.3 文本阴影text-shadow"></a>4.3 文本阴影text-shadow</h3><p>text-shadow可以用来设置文本的阴影效果。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">text-shadow: X-Offset Y-Offset blur color;<br></code></pre></td></tr></table></figure>
+
+<p>X-Offset：表示阴影的水平偏移距离，其值为正值时阴影向右偏移，反之向左偏移；   </p>
+<p>Y-Offset：是指阴影的垂直偏移距离，如果其值是正值时，阴影向下偏移，反之向上偏移；</p>
+<p>Blur：是指阴影的模糊程度，其值不能是负值，如果值越大，阴影越模糊，反之阴影越清晰，如果不需要阴影模糊可以将Blur值设置为0；</p>
+<p>Color：是指阴影的颜色，其可以使用rgba色。</p>
+<p>比如，我们可以用下面代码实现设置阴影效果。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">text-shadow: 0 1px 1px #fff<br></code></pre></td></tr></table></figure>
+
+<h2 id="5-与背景相关的样式"><a href="#5-与背景相关的样式" class="headerlink" title="5.与背景相关的样式"></a>5.与背景相关的样式</h2><h3 id="5-1-background-origin"><a href="#5-1-background-origin" class="headerlink" title="5.1 background-origin"></a>5.1 background-origin</h3><p>设置元素背景图片的<strong>原始起始位置</strong>。</p>
+<p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background-origin ： border-box | padding-box | content-box;<br></code></pre></td></tr></table></figure>
+
+<p>参数分别表示背景图片是从<strong>边框</strong>，还是<strong>内边距（默认值）</strong>，或者是<strong>内容区域</strong>开始显示。</p>
+<p>效果如下：</p>
+<p><img src="https://img.mukewang.com/531003de0001166903660166.jpg" alt="img"></p>
+<p><strong>需要注意的是</strong>，如果背景不是<strong>no-repeat</strong>，这个属性无效，它会从边框开始显示。</p>
+<h3 id="5-2-background-clip"><a href="#5-2-background-clip" class="headerlink" title="5.2 background-clip"></a>5.2 background-clip</h3><p>用来将背景图片做适当的<strong>裁剪</strong>以适应实际需要。</p>
+<p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background-clip ： border-box | padding-box | content-box | no-clip<br></code></pre></td></tr></table></figure>
+
+<p>参数分别表示从<strong>边框、</strong>或<strong>内填充</strong>，或者<strong>内容区域</strong>向外裁剪背景。<strong>no-clip</strong>表示不裁切，和<strong>参数border-box</strong>显示同样的效果。<code>backgroud-clip</code>默认值为<strong>border-box</strong>。</p>
+<p>效果如下图所示：</p>
+<p><img src="https://img.mukewang.com/5310065d0001c95103660166.jpg" alt="img"></p>
+<h3 id="5-3-background-size"><a href="#5-3-background-size" class="headerlink" title="5.3 background-size"></a>5.3 background-size</h3><p>设置背景图片的大小，以<strong>长度值</strong>或<strong>百分比</strong>显示，还可以通过<strong>cover</strong>和<strong>contain</strong>来对图片进行伸缩。</p>
+<p>语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background-size: auto | &lt;长度值&gt; | &lt;百分比&gt; | cover | contain<br></code></pre></td></tr></table></figure>
+
+<p>取值说明：</p>
+<p><strong>1、auto</strong>：默认值，不改变背景图片的原始高度和宽度；</p>
+<p><strong>2、&lt;长度值&gt;<strong>：成对出现如200px 50px，将背景图片宽高依次设置为前面两个值，当设置一个值时，将其作为图片宽度值来</strong>等比缩放</strong>；</p>
+<p>**3、&lt;百分比&gt;**：0％~100％之间的任何值，将背景图片宽高依次设置为所在元素宽高乘以前面百分比得出的数值，当设置一个值时同上；</p>
+<p><strong>4、cover</strong>：顾名思义为<strong>覆盖</strong>，即将背景图片等比缩放以<strong>填满整个容器</strong>；</p>
+<p><strong>5、contain</strong>：容纳，即将背景图片等比缩放至<strong>某一边紧贴容器边缘为止</strong>。</p>
+<h3 id="5-4-multiple-backgrounds？？？"><a href="#5-4-multiple-backgrounds？？？" class="headerlink" title="5.4 multiple backgrounds？？？"></a>5.4 multiple backgrounds？？？</h3><p>多重背景，也就是CSS2里<strong>background</strong>的属性外加<strong>origin</strong>、<strong>clip</strong>和<strong>size</strong>组成的新background的多次叠加，缩写时为用<strong>逗号</strong>隔开的每组值；用分解写法时，如果有多个背景图片，而其他属性只有一个（例如background-repeat只有一个），表明所有背景图片应用该属性值。</p>
+<p>语法缩写如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background ： [background-color] | [background-image] | [background-position][/background-size] | [background-repeat] | [background-attachment] | [background-clip] | [background-origin],...<br></code></pre></td></tr></table></figure>
+
+<p>可以把上面的缩写拆解成以下形式：</p>
+<p>background-image:url1,url2,…,urlN;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">background-repeat : repeat1,repeat2,...,repeatN;<br>backround-position : position1,position2,...,positionN;<br>background-size : size1,size2,...,sizeN;<br>background-attachment : attachment1,attachment2,...,attachmentN;<br>background-clip : clip1,clip2,...,clipN;<br>background-origin : origin1,origin2,...,originN;<br>background-color : color;<br></code></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ol>
+<li>用逗号隔开每组 background 的缩写值；</li>
+<li>如果有 size 值，需要紧跟 position 并且用 “&#x2F;“ 隔开；</li>
+<li>如果有多个背景图片，而其他属性只有一个（例如 background-repeat 只有一个），表明所有背景图片应用该属性值。</li>
+<li>background-color 只能设置一个。</li>
+</ol>
+<h2 id="6-CSS3选择器"><a href="#6-CSS3选择器" class="headerlink" title="6. CSS3选择器"></a>6. CSS3选择器</h2><h3 id="6-1-属性选择器"><a href="#6-1-属性选择器" class="headerlink" title="6.1 属性选择器"></a>6.1 属性选择器</h3><p>  在HTML中，通过各种各样的属性可以给元素增加很多附加的信息。例如，通过id属性可以将不同div元素进行区分。</p>
+<p>  在CSS2中引入了一些属性选择器，而CSS3在CSS2的基础上对属性选择器进行了扩展，新增了3个属性选择器，使得属性选择器有了<strong>通配符</strong>的概念，这三个属性选择器与CSS2的属性选择器共同构成了CSS功能强大的属性选择器。如下表所示：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/56653eba0001b07004610215.jpg"><img src="https://img.mukewang.com/56653eba0001b07004610215.jpg" alt="img"></a></p>
+<p> <strong>实例展示：</strong></p>
+<p><strong>html代码</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;a href=&quot;xxx.pdf&quot;&gt;我链接的是PDF文件&lt;/a&gt;<br>&lt;a href=&quot;#&quot; class=&quot;icon&quot;&gt;我类名是icon&lt;/a&gt;<br>&lt;a href=&quot;#&quot; title=&quot;我的title是more&quot;&gt;我的title是more&lt;/a&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>css代码</strong> </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">a[class^=icon]&#123;<br>  background: green;<br>  color:#fff;<br>&#125;<br>a[href$=pdf]&#123;<br>  background: orange;<br>  color: #fff;<br>&#125;<br>a[title*=more]&#123;<br>  background: blue;<br>  color: #fff;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p> 结果显示：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/53202e050001c07e03820068.jpg"><img src="https://img.mukewang.com/53202e050001c07e03820068.jpg" alt="img"></a></p>
+<h3 id="6-2-结构性伪类选择器—root"><a href="#6-2-结构性伪类选择器—root" class="headerlink" title="6.2 结构性伪类选择器—root"></a>6.2 结构性伪类选择器—root</h3><p><code>:root</code>选择器，从字面上我们就可以很清楚的理解是根选择器，他的意思就是匹配元素E所在文档的根元素。在HTML文档中，根元素始终是<html>。</p>
+<p><strong>示例演示：</strong></p>
+<p>通过“:root”选择器设置背景颜色</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div&gt;:root选择器的演示&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:root &#123;<br>  background:orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/531eb1d90001735d01560050.jpg" alt="img"></p>
+<p>“:root”选择器等同于<html>元素，简单点说：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">:root&#123;background:orange&#125;<br>html &#123;background:orange;&#125;<br></code></pre></td></tr></table></figure>
+
+<p>得到的效果等同。</p>
+<p>建议使用:root方法。</p>
+<p>另外在IE９以下还可以借助“:root”实现hack功能。</p>
+<h3 id="6-3-结构性伪类选择器—not"><a href="#6-3-结构性伪类选择器—not" class="headerlink" title="6.3 结构性伪类选择器—not"></a>6.3 结构性伪类选择器—not</h3><p><code>:not</code>选择器称为<strong>否定选择器</strong>，和jQuery中的:not选择器一模一样，<strong>可以选择除某个元素之外的所有元素</strong>。就拿form元素来说，比如说你想给表单中<strong>除submit按钮之外</strong>的input元素添加红色边框，<strong>CSS代码</strong>可以写成：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">form &#123;<br>  width: 200px;<br>  margin: 20px auto;<br>&#125;<br>div &#123;<br>  margin-bottom: 20px;<br>&#125;<br>input:not([type=&quot;submit&quot;])&#123;<br>  border:1px solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>相关HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;form action=&quot;#&quot;&gt;<br>  &lt;div&gt;<br>    &lt;label for=&quot;name&quot;&gt;Text Input:&lt;/label&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;John Smith&quot; /&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;<br>    &lt;label for=&quot;name&quot;&gt;Password Input:&lt;/label&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;John Smith&quot; /&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;<br>    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;<br>  &lt;/div&gt;<br>&lt;/form&gt;  <br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><strong><img src="https://img.mukewang.com/531eb2ca00014b5002370177.jpg" alt="img"></strong></p>
+<h3 id="6-4-结构性伪类选择器—empty"><a href="#6-4-结构性伪类选择器—empty" class="headerlink" title="6.4 结构性伪类选择器—empty"></a>6.4 结构性伪类选择器—empty</h3><p><code>:empty</code>选择器表示的就是空。用来选择没有任何内容的元素，这里没有内容指的是一点内容都没有，<strong>哪怕是一个空格</strong>。</p>
+<p>示例显示：</p>
+<p>比如说，你的文档中有三个段落p元素，你想把没有任何内容的P元素隐藏起来。我们就可以使用“:empty”选择器来控制。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;p&gt;我是一个段落&lt;/p&gt;<br>&lt;p&gt; &lt;/p&gt;<br>&lt;p&gt;&lt;/p&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">p&#123;<br> background: orange;<br> min-height: 30px;<br>&#125;<br>p:empty &#123;<br>  display: none;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><strong><img src="https://img.mukewang.com/531eb55b0001d7d401580126.jpg" alt="img"></strong></p>
+<h3 id="6-5-CSS3-结构性伪类选择器—target"><a href="#6-5-CSS3-结构性伪类选择器—target" class="headerlink" title="6.5 CSS3 结构性伪类选择器—target"></a>6.5 CSS3 结构性伪类选择器—target</h3><p><code>:target</code>选择器称为目标选择器，用来匹配文档(页面)的<strong>url的某个标志符的目标元素</strong>。我们先来上个例子，然后再做分析。</p>
+<p><strong>示例展示</strong></p>
+<p>点击链接显示隐藏的段落。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;h2&gt;&lt;a href=&quot;#brand&quot;&gt;Brand&lt;/a&gt;&lt;/h2&gt;<br>&lt;div class=&quot;menuSection&quot; id=&quot;brand&quot;&gt;<br>    content for Brand<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.menuSection&#123;<br>  display: none;<br>&#125;<br>:target&#123;/*这里的:target就是指id=&quot;brand&quot;的div对象*/<br>  display:block;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/53217ea30001103002230101.jpg"><img src="https://img.mukewang.com/53217ea30001103002230101.jpg" alt="img"></a></p>
+<p><strong>分析：</strong></p>
+<p>1、具体来说，触发元素的URL中的标志符通常会包含一个**#号<strong>，后面带有一个</strong>标志符名称**，上面代码中是：<code>#brand</code></p>
+<p>2、：target就是用来匹配id为“brand”的元素（id&#x3D;”brand”的元素）,上面代码中是那个div元素。</p>
+<p><strong>多个url（多个target）处理：</strong></p>
+<p>就像上面的例子，#brand与后面的id&#x3D;”brand”是对应的，当同一个页面上有很多的url的时候你可以取不同的名字，只要#号后对的名称与id&#x3D;””中的名称对应就可以了。<br>如下面例子：<br>html代码：  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;h2&gt;&lt;a href=&quot;#brand&quot;&gt;Brand&lt;/a&gt;&lt;/h2&gt;<br>&lt;div class=&quot;menuSection&quot; id=&quot;brand&quot;&gt;<br>  content for Brand<br>&lt;/div&gt;<br>&lt;h2&gt;&lt;a href=&quot;#jake&quot;&gt;Brand&lt;/a&gt;&lt;/h2&gt;<br>&lt;div class=&quot;menuSection&quot; id=&quot;jake&quot;&gt;<br> content for jake<br>&lt;/div&gt;<br>&lt;h2&gt;&lt;a href=&quot;#aron&quot;&gt;Brand&lt;/a&gt;&lt;/h2&gt;<br>&lt;div class=&quot;menuSection&quot; id=&quot;aron&quot;&gt;<br>    content for aron<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p>css代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">#brand:target &#123;<br>  background: orange;<br>  color: #fff;<br>&#125;<br>#jake:target &#123;<br>  background: blue;<br>  color: #fff;<br>&#125;<br>#aron:target &#123;<br>  background: red;<br>  color: #fff;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>上面的代码可以对不同的target对象分别设置不的样式。</p>
+<h3 id="6-6-CSS3-结构性伪类选择器—first-child"><a href="#6-6-CSS3-结构性伪类选择器—first-child" class="headerlink" title="6.6 CSS3 结构性伪类选择器—first-child"></a>6.6 CSS3 结构性伪类选择器—first-child</h3><p>“:first-child”选择器表示的是<strong>选择父元素的第一个子元素的元素E</strong>。简单点理解就是选择元素中的第一个子元素，记住是<strong>子元素</strong>，而不是后代元素。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:first-child”选择器定位列表中的第一个列表项，并将序列号颜色变为红色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;ol&gt;<br>  &lt;li&gt;&lt;a href=&quot;##&quot;&gt;Link1&lt;/a&gt;&lt;/li&gt;<br>  &lt;li&gt;&lt;a href=&quot;##&quot;&gt;Link2&lt;/a&gt;&lt;/li&gt;<br>  &lt;li&gt;&lt;a href=&quot;##&quot;&gt;link3&lt;/a&gt;&lt;/li&gt;<br>&lt;/ol&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ol &gt; li&#123;<br>  font-size:20px;<br>  font-weight: bold;<br>  margin-bottom: 10px;<br>&#125;<br><br>ol a &#123;<br>  font-size: 16px;<br>  font-weight: normal;<br>&#125;<br><br>ol &gt; li:first-child&#123;<br>  color: red;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/531eb8ca0001c5ba01250125.jpg" alt="img"></p>
+<h3 id="6-7-CSS3-结构性伪类选择器—last-child"><a href="#6-7-CSS3-结构性伪类选择器—last-child" class="headerlink" title="6.7 CSS3 结构性伪类选择器—last-child"></a>6.7 CSS3 结构性伪类选择器—last-child</h3><p>“:last-child”选择器与“:first-child”选择器作用类似，不同的是“:last-child”选择器选择的是元素的最后一个子元素。例如，需要改变的是列表中的最后一个“li”的背景色，就可以使用这个选择器，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ul&gt;li:last-child&#123;background:blue;&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>示例演示</strong></p>
+<p>在博客的排版中，每个段落都有15px的margin-bottom，假设不想让博客“post”中最后一个段落不需要底部的margin值，可以使用“:last-child”选择器。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;post&quot;&gt;<br>  &lt;p&gt;第一段落&lt;/p&gt;<br>  &lt;p&gt;第二段落&lt;/p&gt;<br>  &lt;p&gt;第三段落&lt;/p&gt;<br>  &lt;p&gt;第四段落&lt;/p&gt;<br>  &lt;p&gt;第五段落&lt;/p&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.post &#123;<br>  padding: 10px;<br>  border: 1px solid #ccc;<br>  width: 200px;<br>  margin: 20px auto;<br>&#125;<br>.post p &#123;<br>  margin:0 0 15px 0;<br>&#125;<br><br>.post p:last-child &#123;<br>  margin-bottom:0;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><strong><img src="https://img.mukewang.com/531eb9cb0001428002760188.jpg" alt="img"></strong></p>
+<h3 id="6-8-CSS3-结构性伪类选择器—nth-child-n"><a href="#6-8-CSS3-结构性伪类选择器—nth-child-n" class="headerlink" title="6.8 CSS3 结构性伪类选择器—nth-child(n)"></a>6.8 CSS3 结构性伪类选择器—nth-child(n)</h3><p>“:nth-child(n)”选择器用来定位某个<strong>父元素</strong>的<strong>一个或多个特定的子元素</strong>。其中“n”是其参数，而且可以是整数值(1,2,3,4)，也可以是表达式(2n+1、-n+5)和关键词(odd、even)，但<strong>参数n的起始值始终是1，而不是0</strong>。也就是说，参数n的值为0时，选择器将选择不到任何匹配的元素。</p>
+<p><strong>经验与技巧:<strong>当“:nth-child(n)”选择器中的n为一个表达式时，</strong>其中n是从0开始计算，当表达式的值为0或小于0的时候，不选择任何匹配的元素</strong>。如下表所示：</p>
+<p><img src="https://img.mukewang.com/531eba56000138aa05870197.jpg" alt="img"></p>
+<p><strong>案例演示</strong></p>
+<p> 通过“:nth-child(n)”选择器，并且参数使用表达式“2n”，将偶数行列表背景色设置为橙色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;ol&gt;<br>  &lt;li&gt;item1&lt;/li&gt;<br>  &lt;li&gt;item2&lt;/li&gt;<br>  &lt;li&gt;item3&lt;/li&gt;<br>  &lt;li&gt;item4&lt;/li&gt;<br>  &lt;li&gt;item5&lt;/li&gt;<br>  &lt;li&gt;item6&lt;/li&gt;<br>  &lt;li&gt;item7&lt;/li&gt;<br>  &lt;li&gt;item8&lt;/li&gt;<br>  &lt;li&gt;item9&lt;/li&gt;<br>  &lt;li&gt;item10&lt;/li&gt;<br>&lt;/ol&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ol &gt; li:nth-child(2n)&#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：<br><img src="https://img.mukewang.com/531ebac90001750902580228.jpg" alt="img"></strong></p>
+<h3 id="6-9-CSS3-结构性伪类选择器—nth-last-child-n"><a href="#6-9-CSS3-结构性伪类选择器—nth-last-child-n" class="headerlink" title="6.9 CSS3 结构性伪类选择器—nth-last-child(n)"></a>6.9 CSS3 结构性伪类选择器—nth-last-child(n)</h3><p>“:nth-last-child(n)”选择器和前面的“:nth-child(n)”选择器非常的相似，只是这里多了一个“last”，所起的作用和“:nth-child(n)”选择器有所区别，从某父元素的最后一个子元素开始计算，来选择特定的元素。</p>
+<p><strong>案例演示</strong></p>
+<p>选择列表中倒数第五个列表项，将其背景设置为橙色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;ol&gt;<br>  &lt;li&gt;item1&lt;/li&gt;<br>  &lt;li&gt;item2&lt;/li&gt;<br>  &lt;li&gt;item3&lt;/li&gt;<br>  &lt;li&gt;item4&lt;/li&gt;<br>  &lt;li&gt;item5&lt;/li&gt;<br>  &lt;li&gt;item6&lt;/li&gt;<br>  &lt;li&gt;item7&lt;/li&gt;<br>  &lt;li&gt;item8&lt;/li&gt;<br>  &lt;li&gt;item9&lt;/li&gt;<br>  &lt;li&gt;item10&lt;/li&gt;<br>  &lt;li&gt;item11&lt;/li&gt;<br>  &lt;li&gt;item12&lt;/li&gt;<br>  &lt;li&gt;item13&lt;/li&gt;<br>  &lt;li&gt;item14&lt;/li&gt;<br>  &lt;li&gt;item15&lt;/li&gt;<br>&lt;/ol&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">ol &gt; li:nth-last-child(5)&#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/531ebb7a0001d20b01530286.jpg" alt="img"></p>
+<h3 id="6-10-CSS3-first-of-type选择器"><a href="#6-10-CSS3-first-of-type选择器" class="headerlink" title="6.10 CSS3 first-of-type选择器"></a>6.10 CSS3 first-of-type选择器</h3><p>“:first-of-type”选择器类似于“:first-child”选择器，不同之处就是<strong>指定了元素的类型</strong>,其主要用来定位一个父元素下的某个类型的第一个子元素。</p>
+<p><strong>示例演示：</strong></p>
+<p>通过“:first-of-type”选择器，定位div容器中的第一个p元素（p不一定是容器中的第一个子元素），并设置其背景色为橙色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;wrapper&quot;&gt;<br>  &lt;div&gt;我是一个块元素，我是.wrapper的第一个子元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落元素，我是不是.wrapper的第一个子元素，但是他的第一个段落元素&lt;/p&gt;<br>  &lt;p&gt;我是一个段落元素&lt;/p&gt;<br>  &lt;div&gt;我是一个块元素&lt;/div&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.wrapper &#123;<br>  width: 500px;<br>  margin: 20px auto;<br>  padding: 10px;<br>  border: 1px solid #ccc;<br>  color: #fff;<br>&#125;<br>.wrapper &gt; div &#123;<br>  background: green;<br>&#125;<br>.wrapper &gt; p &#123;<br>  background: blue;<br>&#125;<br>/*我要改变第一个段落的背景为橙色*/<br>.wrapper &gt; p:first-of-type &#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>演示结果：</p>
+<p><img src="https://img.mukewang.com/532959820001ab6804700149.jpg" alt="img"></p>
+<h3 id="6-11-CSS3-nth-of-type-n-选择器"><a href="#6-11-CSS3-nth-of-type-n-选择器" class="headerlink" title="6.11 CSS3 nth-of-type(n)选择器"></a>6.11 CSS3 nth-of-type(n)选择器</h3><p>“<code>:nth-of-type(n)</code>”选择器和“<code>:nth-child(n)</code>”选择器非常类似，不同的是它只计算父元素中指定的某种类型的子元素。当某个元素中的子元素不单单是同一种类型的子元素时，使用“:nth-of-type(n)”选择器来定位于父元素中某种类型的子元素是非常方便和有用的。在“:nth-of-type(n)”选择器中的“n”和“:nth-child(n)”选择器中的“n”参数也一样，可以是具体的<strong>整数</strong>，也可以是<strong>表达式</strong>，还可以是<strong>关键词</strong>。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:nth-of-type(2n)”选择器，将容器“div.wrapper”中偶数段数的背景设置为橙色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;wrapper&quot;&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落元素&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.wrapper &gt; p:nth-of-type(2n)&#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/532be1ed00010f5403290494.jpg" alt="img"></p>
+<h3 id="6-12-CSS3-last-of-type选择器"><a href="#6-12-CSS3-last-of-type选择器" class="headerlink" title="6.12 CSS3 last-of-type选择器"></a>6.12 CSS3 last-of-type选择器</h3><p>“<code>:last-of-type</code>”选择器和“<code>:first-of-type</code>”选择器功能是一样的，不同的是他选择是父元素下的某个类型的<code>最后一个子元素</code>。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:last-of-type”选择器，将容器“div.wrapper”中最后一个段落元素背景设置为橙色</p>
+<p>（<strong>提示：</strong>这个段落不是“div.wrapper”容器的最后一个子元素）。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;wrapper&quot;&gt;<br>  &lt;p&gt;我是第一个段落&lt;/p&gt;<br>  &lt;p&gt;我是第二个段落&lt;/p&gt;<br>  &lt;p&gt;我是第三个段落&lt;/p&gt;<br>  &lt;div&gt;我是第一个Div元素&lt;/div&gt;<br>  &lt;div&gt;我是第二个Div元素&lt;/div&gt;<br>  &lt;div&gt;我是第三个Div元素&lt;/div&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext"> .wrapper &gt; p:last-of-type&#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+<p>演示结果：</p>
+<p><img src="https://img.mukewang.com/53295ba70001d68d02470183.jpg" alt="img"></p>
+<h3 id="6-13-CSS3-nth-last-of-type-n-选择器"><a href="#6-13-CSS3-nth-last-of-type-n-选择器" class="headerlink" title="6.13 CSS3 nth-last-of-type(n)选择器"></a>6.13 CSS3 nth-last-of-type(n)选择器</h3><p>“<code>:nth-last-of-type(n)</code>”选择器和“<code>:nth-of-type(n)</code>”选择器是一样的，选择父元素中指定的某种子元素类型，但它的起始方向是从最后一个子元素开始，而且它的使用方法类似于上节中介绍的“<code>:nth-last-child(n)</code>”选择器一样。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:nth-last-of-type(n)”选择器将容器“div.wrapper”中的倒数第三个段落背景设置为橙色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;wrapper&quot;&gt;<br>  &lt;p&gt;我是第一个段落&lt;/p&gt;<br>  &lt;p&gt;我是第二个段落&lt;/p&gt;<br>  &lt;p&gt;我是第三个段落&lt;/p&gt;<br>  &lt;p&gt;我是第四个段落&lt;/p&gt;<br>  &lt;p&gt;我是第五个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>  &lt;p&gt;我是第六个段落&lt;/p&gt;<br>  &lt;p&gt;我是第七个段落&lt;/p&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.wrapper &gt; p:nth-last-of-type(3)&#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/53295c5900015a5a02190200.jpg" alt="img"></p>
+<h3 id="6-14-CSS3-only-child选择器"><a href="#6-14-CSS3-only-child选择器" class="headerlink" title="6.14 CSS3 only-child选择器"></a>6.14 CSS3 only-child选择器</h3><p>“<code>:only-child</code>”选择器选择的是父元素中只有一个子元素，而且只有唯一的一个子元素。也就是说，匹配的元素的父元素中仅有一个子元素，而且是一个<strong>唯一的子元素</strong>。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:only-child”选择器，来控制仅有一个子元素的背景样式，为了更好的理解，我们这个示例通过对比的方式来向大家演示。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;post&quot;&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;post&quot;&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.post p &#123;<br>  background: green;<br>  color: #fff;<br>  padding: 10px;<br>&#125;<br>.post p:only-child &#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/53295d4a0001e07202260173.jpg" alt="img"></p>
+<h3 id="6-15-CSS3-only-of-type选择器"><a href="#6-15-CSS3-only-of-type选择器" class="headerlink" title="6.15 CSS3 only-of-type选择器"></a>6.15 CSS3 only-of-type选择器</h3><p><code>“:only-of-type”</code>选择器用来选择一个元素是它的父元素的唯一一个相同类型的子元素。这样说或许不太好理解，换一种说法。<code>“:only-of-type”</code>是表示一个元素他有很多个子元素，而其中只有一种类型的子元素是唯一的，使用“:only-of-type”选择器就可以选中这个元素中的唯一一个类型子元素。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:only-of-type”选择器来修改容器中仅有一个div元素的背景色为橙色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;div class=&quot;wrapper&quot;&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>  &lt;div&gt;我是一个Div元素&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;wrapper&quot;&gt;<br>  &lt;div&gt;我是一个Div&lt;/div&gt;<br>  &lt;ul&gt;<br>    &lt;li&gt;我是一个列表项&lt;/li&gt;<br>  &lt;/ul&gt;<br>  &lt;p&gt;我是一个段落&lt;/p&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">.wrapper &gt; div:only-of-type &#123;<br>  background: orange;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>演示结果：</strong></p>
+<p><img src="https://img.mukewang.com/53295deb000128d801980212.jpg" alt="img"></p>
+<h3 id="6-16-CSS3选择器-enabled选择器"><a href="#6-16-CSS3选择器-enabled选择器" class="headerlink" title="6.16 CSS3选择器 :enabled选择器"></a>6.16 CSS3选择器 :enabled选择器</h3><p>在Web的表单中，有些表单元素有可用（<strong>“:enabled”</strong>）和不可用（“**:disabled<strong>”）状态，比如输入框，密码框，复选框等。在默认情况之下，这些表单元素都处在可用状态。那么我们可以通过伪选择器“</strong>:enabled**”对这些表单元素设置样式。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“:enabled”选择器，修改文本输入框的边框为2像素的红色边框，并设置它的背景为<strong>灰色</strong>。</p>
+<p><strong>HTML代码:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;form action=&quot;#&quot;&gt;<br>  &lt;div&gt;<br>    &lt;label for=&quot;name&quot;&gt;Text Input:&lt;/label&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;可用输入框&quot;  /&gt;<br>  &lt;/div&gt;<br>   &lt;div&gt;<br>    &lt;label for=&quot;name&quot;&gt;Text Input:&lt;/label&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;禁用输入框&quot;  disabled=&quot;disabled&quot; /&gt;<br>  &lt;/div&gt;<br>&lt;/form&gt;  <br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">div&#123;<br>  margin: 20px;<br>&#125;<br>input[type=&quot;text&quot;]:enabled &#123;<br>  background: #ccc;<br>  border: 2px solid red;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>结果演示</strong></p>
+<p><img src="https://img.mukewang.com/5335299700015e3403000084.jpg" alt="img"></p>
+<h3 id="6-17-CSS3选择器-disabled选择器"><a href="#6-17-CSS3选择器-disabled选择器" class="headerlink" title="6.17 CSS3选择器 :disabled选择器"></a>6.17 CSS3选择器 :disabled选择器</h3><p>“**:disabled<strong>”选择器刚好与“</strong>:enabled**”选择器相反，用来选择不可用表单元素。要正常使用“:disabled”选择器，需要在表单元素的HTML中设置“disabled”属性。</p>
+<p><strong>示例演示</strong></p>
+<p>通过“**:disabled**”选择器，给不可用输入框设置明显的样式。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;form action=&quot;#&quot;&gt;<br>  &lt;div&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;我是可用输入框&quot; /&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;我是不可用输入框&quot; disabled /&gt;<br>  &lt;/div&gt;<br>&lt;/form&gt;  <br></code></pre></td></tr></table></figure>
+
+
+<p><strong>CSS代码</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">form &#123;<br>  margin: 50px;<br>&#125;<br>div &#123;<br>  margin-bottom: 20px;<br>&#125;<br>input &#123;<br>  background: #fff;<br>  padding: 10px;<br>  border: 1px solid orange;<br>  border-radius: 3px;<br>&#125;<br>input[type=&quot;text&quot;]:disabled &#123;<br>  background: rgba(0,0,0,.15);<br>  border: 1px solid rgba(0,0,0,.15);<br>  color: rgba(0,0,0,.15);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>结果演示：</strong></p>
+<p><img src="https://img.mukewang.com/53326c450001881402490139.jpg" alt="img"></p>
+<h3 id="6-18-CSS3选择器-checked选择器"><a href="#6-18-CSS3选择器-checked选择器" class="headerlink" title="6.18 CSS3选择器 :checked选择器"></a>6.18 CSS3选择器 :checked选择器</h3><p>在表单元素中，单选按钮和复选按钮都具有<strong>选中</strong>和<strong>未选中</strong>状态。（大家都知道，要覆写这两个按钮默认样式比较困难）。在CSS3中，我们可以通过状态选择器“:checked”配合其他标签实现<strong>自定义样式</strong>。而“**:checked**”表示的是选中状态。</p>
+<p><strong>示例演示：</strong></p>
+<p>通过“:checked”状态来自定义复选框效果。</p>
+<p><strong>HTML代码</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;form action=&quot;#&quot;&gt;<br>  &lt;div class=&quot;wrapper&quot;&gt;<br>    &lt;div class=&quot;box&quot;&gt;<br>      &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; id=&quot;usename&quot; /&gt;&lt;span&gt;√&lt;/span&gt;<br>    &lt;/div&gt;<br>    &lt;lable for=&quot;usename&quot;&gt;我是选中状态&lt;/lable&gt;<br>  &lt;/div&gt;<br>  <br>  &lt;div class=&quot;wrapper&quot;&gt;<br>    &lt;div class=&quot;box&quot;&gt;<br>      &lt;input type=&quot;checkbox&quot;  id=&quot;usepwd&quot; /&gt;&lt;span&gt;√&lt;/span&gt;<br>    &lt;/div&gt;<br>    &lt;label for=&quot;usepwd&quot;&gt;我是未选中状态&lt;/label&gt;<br>  &lt;/div&gt;<br>&lt;/form&gt; <br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">form &#123;<br>  border: 1px solid #ccc;<br>  padding: 20px;<br>  width: 300px;<br>  margin: 30px auto;<br>&#125;<br><br>.wrapper &#123;<br>  margin-bottom: 10px;<br>&#125;<br><br>.box &#123;<br>  display: inline-block;<br>  width: 20px;<br>  height: 20px;<br>  margin-right: 10px;<br>  position: relative;<br>  border: 2px solid orange;<br>  vertical-align: middle;<br>&#125;<br><br>.box input &#123;<br>  opacity: 0;<br>  position: absolute;<br>  top:0;<br>  left:0;<br>&#125;<br><br>.box span &#123;<br>  position: absolute;<br>  top: -10px;<br>  right: 3px;<br>  font-size: 30px;<br>  font-weight: bold;<br>  font-family: Arial;<br>  -webkit-transform: rotate(30deg);<br>  transform: rotate(30deg);<br>  color: orange;<br>&#125;<br><br>input[type=&quot;checkbox&quot;] + span &#123;<br>  opacity: 0;<br>&#125;<br><br>input[type=&quot;checkbox&quot;]:checked + span &#123;<br>  opacity: 1;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>结果演示</p>
+<p><img src="https://img.mukewang.com/53326d1f0001b8a703280126.jpg" alt="img"></p>
+<h3 id="6-19-CSS3选择器-selection选择器"><a href="#6-19-CSS3选择器-selection选择器" class="headerlink" title="6.19 CSS3选择器 ::selection选择器"></a>6.19 CSS3选择器 ::selection选择器</h3><p>“**::selection<strong>”伪元素是用来匹配</strong>突出显示**的文本(用鼠标选择文本时的文本)。浏览器默认情况下，用鼠标选择网页文本是以“深蓝的背景，白色的字体”显示的，效果如下图所示：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/533e50910001bff808670219.jpg"><img src="https://img.mukewang.com/533e50910001bff808670219.jpg" alt="img"></a></p>
+<p>从上图中可以看出，用鼠标选中“专注IT、互联网技术”、“纯干货、学以致用”、“没错、这是免费的”这三行文本中，默认显示样式为：蓝色背景、白色文本。</p>
+<p>有的时候设计要求,不使用上图那种浏览器默认的突出文本效果，需要一个与众不同的效果，此时“**::selection<strong>”伪元素就非常的实用。不过在</strong>Firefox浏览器**还需要添加前缀。</p>
+<p><strong>示例演示:</strong></p>
+<p>通过“::selection”选择器，将Web中选中的文本背景变成红色，文本变成绿色。</p>
+<p><strong>HTML代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;p&gt;“::selection”伪元素是用来匹配突出显示的文本。浏览器默认情况下，选择网站文本是深蓝的背景，白色的字体，&lt;/p&gt;<br></code></pre></td></tr></table></figure>
+
+<p><strong>CSS代码：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">::-moz-selection &#123;<br>  background: red;<br>  color: green;<br>&#125;<br>::selection &#123;<br>  background: red;<br>  color: green;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>结果演示：</p>
+<p><a target="_blank" rel="noopener" href="https://img.mukewang.com/533e52b80001973007260033.jpg"><img src="https://img.mukewang.com/533e52b80001973007260033.jpg" alt="img"></a></p>
+<p>注意：</p>
+<p>1、IE9+、Opera、Google Chrome 以及 Safari 中支持 ::selection 选择器。</p>
+<p>2、Firefox 支持替代的 ::-moz-selection。</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-start"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2022/11/24/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">← Next 算法基础</a></div></div></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="INDEX">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">shimmer</a></h1><div id="description"></div></div><div id="aside-block"><div id="toc-div"><h1>INDEX</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS3"><span class="toc-number">1.</span> <span class="toc-text">CSS3</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%88%9D%E8%AF%86CSS3"><span class="toc-number">1.1.</span> <span class="toc-text">1.初识CSS3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%BE%B9%E6%A1%86"><span class="toc-number">1.2.</span> <span class="toc-text">2. 边框</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%9C%86%E8%A7%92%E6%95%88%E6%9E%9C-border-radius"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 圆角效果 border-radius</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E9%98%B4%E5%BD%B1-box-shadow%EF%BC%88%E4%B8%80%EF%BC%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 阴影 box-shadow（一）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E9%98%B4%E5%BD%B1-box-shadow%EF%BC%88%E4%BA%8C%EF%BC%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 阴影 box-shadow（二）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E4%B8%BA%E8%BE%B9%E6%A1%86%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87-border-image"><span class="toc-number">1.2.4.</span> <span class="toc-text">2.4 为边框应用图片 border-image</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%85%B3"><span class="toc-number">1.3.</span> <span class="toc-text">3. 颜色相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E9%A2%9C%E8%89%B2%E4%B9%8BRGBA"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 颜色之RGBA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%B8%90%E5%8F%98%E8%89%B2%E5%BD%A9"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 渐变色彩</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%96%87%E5%AD%97%E4%B8%8E%E5%AD%97%E4%BD%93"><span class="toc-number">1.4.</span> <span class="toc-text">4. 文字与字体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-text-overflow-%E4%B8%8E-word-wrap"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 text-overflow 与 word-wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%B5%8C%E5%85%A5%E5%AD%97%E4%BD%93-font-face"><span class="toc-number">1.4.2.</span> <span class="toc-text">4.2 嵌入字体@font-face</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E6%96%87%E6%9C%AC%E9%98%B4%E5%BD%B1text-shadow"><span class="toc-number">1.4.3.</span> <span class="toc-text">4.3 文本阴影text-shadow</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%B8%8E%E8%83%8C%E6%99%AF%E7%9B%B8%E5%85%B3%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">5.与背景相关的样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-background-origin"><span class="toc-number">1.5.1.</span> <span class="toc-text">5.1 background-origin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-background-clip"><span class="toc-number">1.5.2.</span> <span class="toc-text">5.2 background-clip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-background-size"><span class="toc-number">1.5.3.</span> <span class="toc-text">5.3 background-size</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-multiple-backgrounds%EF%BC%9F%EF%BC%9F%EF%BC%9F"><span class="toc-number">1.5.4.</span> <span class="toc-text">5.4 multiple backgrounds？？？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-CSS3%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.</span> <span class="toc-text">6. CSS3选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.1.</span> <span class="toc-text">6.1 属性选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94root"><span class="toc-number">1.6.2.</span> <span class="toc-text">6.2 结构性伪类选择器—root</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94not"><span class="toc-number">1.6.3.</span> <span class="toc-text">6.3 结构性伪类选择器—not</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94empty"><span class="toc-number">1.6.4.</span> <span class="toc-text">6.4 结构性伪类选择器—empty</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-5-CSS3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94target"><span class="toc-number">1.6.5.</span> <span class="toc-text">6.5 CSS3 结构性伪类选择器—target</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-6-CSS3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94first-child"><span class="toc-number">1.6.6.</span> <span class="toc-text">6.6 CSS3 结构性伪类选择器—first-child</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-7-CSS3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94last-child"><span class="toc-number">1.6.7.</span> <span class="toc-text">6.7 CSS3 结构性伪类选择器—last-child</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-8-CSS3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94nth-child-n"><span class="toc-number">1.6.8.</span> <span class="toc-text">6.8 CSS3 结构性伪类选择器—nth-child(n)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-9-CSS3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8%E2%80%94nth-last-child-n"><span class="toc-number">1.6.9.</span> <span class="toc-text">6.9 CSS3 结构性伪类选择器—nth-last-child(n)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-10-CSS3-first-of-type%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.10.</span> <span class="toc-text">6.10 CSS3 first-of-type选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-11-CSS3-nth-of-type-n-%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.11.</span> <span class="toc-text">6.11 CSS3 nth-of-type(n)选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-12-CSS3-last-of-type%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.12.</span> <span class="toc-text">6.12 CSS3 last-of-type选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-13-CSS3-nth-last-of-type-n-%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.13.</span> <span class="toc-text">6.13 CSS3 nth-last-of-type(n)选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-14-CSS3-only-child%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.14.</span> <span class="toc-text">6.14 CSS3 only-child选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-15-CSS3-only-of-type%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.15.</span> <span class="toc-text">6.15 CSS3 only-of-type选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-16-CSS3%E9%80%89%E6%8B%A9%E5%99%A8-enabled%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.16.</span> <span class="toc-text">6.16 CSS3选择器 :enabled选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-17-CSS3%E9%80%89%E6%8B%A9%E5%99%A8-disabled%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.17.</span> <span class="toc-text">6.17 CSS3选择器 :disabled选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-18-CSS3%E9%80%89%E6%8B%A9%E5%99%A8-checked%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.18.</span> <span class="toc-text">6.18 CSS3选择器 :checked选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-19-CSS3%E9%80%89%E6%8B%A9%E5%99%A8-selection%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.6.19.</span> <span class="toc-text">6.19 CSS3选择器 ::selection选择器</span></a></li></ol></li></ol></li></ol></div></div></div><footer><nobr>published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>
