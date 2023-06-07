@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>陕西省赛  逆向wp | shimmer's blog</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 共 $1 行","copy":"复制","copyFinish":"完成","expand":"展开"}}</script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://pica.zhimg.com/80/v2-521231b4ebe13d5fbfff75e801045ff2_1440w.webp?source=1940ef5c);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1>陕西省赛  逆向wp</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-06-06T11:15:19.000Z" id="date"> 2023-06-06</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-06-07T11:40:31.699Z" id="updated"> 2023-06-07</time></div></span></div></div><hr><div id="post-content"><p>比赛（3&#x2F;4）</p>
+<h3 id="我的upx-d怎么坏了："><a href="#我的upx-d怎么坏了：" class="headerlink" title="我的upx -d怎么坏了："></a>我的upx -d怎么坏了：</h3><p>魔改upx壳，先手脱壳，dump出来，可以看到就是一个迷宫：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071938172.png" alt="image-20230607193753008"></p>
+<p>从S走到#</p>
+<h3 id="Babypython"><a href="#Babypython" class="headerlink" title="Babypython"></a>Babypython</h3><p>字节码，逻辑挺多的，但是对输入的加密不多，逆着来看，程序会输出output：&#x3D;1nb0A3b7AUQwB3b84mQ&#x2F;E0MvJUb+EXbx5TQwF3bt52bAZncsd9c，根据字节码，最后输出时是先base64加密，再逆序，再替换了三个字符，字节码翻译成伪代码如图：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071938639.png" alt="image-20230607193842544"></p>
+<p>那么再看output是如何生成的，继续手搓字节码，得到伪代码：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071939302.png" alt="image-20230607193907216"></p>
+<p>只有两部分对output有作用，其他不用管，大概逻辑就是先将flag逐位异或8，再+3，存到了output里。那么先求出base后的output：qglrv@onmlqpA&gt;qmq&gt;mBo3A?Bn&lt;lppA@;lp4nx</p>
+<p>Exp</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071939907.png" alt="image-20230607193927826"></p>
+<p>Flag：flag{5dcbafe63fbf3b7d8647c1aee650ae9c}</p>
+<h3 id="BadCoffee"><a href="#BadCoffee" class="headerlink" title="BadCoffee"></a>BadCoffee</h3><p>是一道加了混淆后的js代码，混淆主要就是在数字和字符串上，逻辑感觉上并无影响，虽然关键逻辑就一点点。</p>
+<p>一步一步手动解混淆，把表达式都求出来，是两个42个数字的数组，再将一些不好看的字符串重命名一下。再看逻辑，如图：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071939163.png" alt="image-20230607193942056"></p>
+<p>Xxx函数就是传入两个数进行异或。大概就是将input逐位异或num_42数组，再倒着异或一遍num_42数组，得到了最后的密文，在最后有对密文的比较，如图：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071940192.png" alt="image-20230607194001098"></p>
+<p>所以解密exp：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071940065.png" alt="image-20230607194014006"></p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202306071940048.png" alt="img"></p>
+<p>Flag：flag{I_c0uld_neu3r_undeRstand_jvaVs3rIpt!}</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2023/06/01/linux%20ptrace/">linux ptrace Prev →</a></div></div></div><div id="Valine"></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="INDEX">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/touxiang.png" alt="Logo"></a><h1 id="Dr"><a href="/">shimmer</a></h1><div id="description"><p>一</p><p>些</p><p>小</p><p>笔</p><p>记</p><p>或</p><p>是</p><p>小</p><p>感</p><p>悟</p></div></div><div id="aside-block"><div id="toc-div"><h1>INDEX</h1><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E7%9A%84upx-d%E6%80%8E%E4%B9%88%E5%9D%8F%E4%BA%86%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">我的upx -d怎么坏了：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Babypython"><span class="toc-number">2.</span> <span class="toc-text">Babypython</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BadCoffee"><span class="toc-number">3.</span> <span class="toc-text">BadCoffee</span></a></li></ol></div></div></div><footer><nobr>published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{new Valine({
+ el: '#Valine'
+ , appId: 'fvW1eWgLvTdXfECCW1Bu9g6J-gzGzoHsz'
+ , appKey: 'stD8FmxHNFFxhkzXholoBHdq' , placeholder: '此条评论委托企鹅物流发送'
+});code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>
