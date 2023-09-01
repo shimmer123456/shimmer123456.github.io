@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>drozer的安装与使用 | shimmer's blog</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 共 $1 行","copy":"复制","copyFinish":"完成","expand":"展开"}}</script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://pica.zhimg.com/80/v2-521231b4ebe13d5fbfff75e801045ff2_1440w.webp?source=1940ef5c);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1>drozer的安装与使用</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-09-01T00:15:19.000Z" id="date"> 2023-09-01</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-09-01T04:47:37.570Z" id="updated"> 2023-09-01</time></div></span></div></div><hr><div id="post-content"><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>先弄python环境，需要python2.7，记得pip也得换成对应的</p>
+<p>去官网（<a target="_blank" rel="noopener" href="https://labs.withsecure.com/tools/drozer">Drozer | WithSecure™ Labs</a>）下载两个东西</p>
+<p>drozer2.4.4.win32.msi和drozer.apk</p>
+<p><strong>drozer.apk</strong></p>
+<p>这个安装到手机里，运行，点击下面的按钮，并打开端口（变为enable状态），结束</p>
+<p><strong>drozer2.4.4.win32.msi</strong></p>
+<p>这个就比较复杂了，运行，安装的时候注意选择python2.7的，如果那个没有检测出来的话，需要自己指定python2.7路径。</p>
+<p>安装完之后这个东西会放在你的python2.7路径下的script文件夹，在当前目录下打开cmd</p>
+<p><strong>接下来安装四个库</strong>（大坑）</p>
+<p>先看看自己的pip版本（pip -V），确认是python2.7再继续</p>
+<p>先使用这三个命令安装三个库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">pip install &quot;pip&lt;21.0&quot; pyOpenSSL<br><br>pip install &quot;pip&lt;21.0&quot; service_identity<br><br>pip install &quot;pip&lt;21.0&quot; twisted<br></code></pre></td></tr></table></figure>
+
+<p>然后安装最后一个的时候：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">D:\Python27\Scripts&gt;pip install &quot;pip&lt;21.0&quot; protobuf<br><br>Requirement already satisfied: pip&lt;21.0 in d:\python27\lib\site-packages<br>Collecting protobuf<br>  Using cached https://files.pythonhosted.org/packages/6c/be/4e32d02bf08b8f76bf6e59f2a531690c1e4264530404501f3489ca975d9a/protobuf-4.21.0-py2.py3-none-any.whl<br>protobuf requires Python &#x27;&gt;=3.7&#x27; but the running Python is 2.7.14<br>You are using pip version 9.0.1, however version 23.2.1 is available.<br>You should consider upgrading via the &#x27;python -m pip install --upgrade pip&#x27; command.<br><br><br></code></pre></td></tr></table></figure>
+
+<p>报错提示就是python需要&gt;&#x3D;3.7，真是太矛盾了</p>
+<p>怎么解决的呢，我只是把代理关了….就成功了？（虽然还是有报错，但确实安装了）</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202309011243165.png" alt="image-20230901124253052"></p>
+<p>然后：</p>
+<p>进行端口转发： adb forward tcp:31415 tcp:31415</p>
+<p>连接进入控制台： drozer.bat console connect</p>
+<p>成功效果：</p>
+<p><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/202309011243165.png"></p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2023/06/25/msfconsole/">msfconsole Prev →</a></div></div></div><div id="Valine"></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="INDEX">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://raw.githubusercontent.com/shimmer123456/img/main/img/touxiang.png" alt="Logo"></a><h1 id="Dr"><a href="/">shimmer</a></h1><div id="description"><p>一</p><p>些</p><p>小</p><p>笔</p><p>记</p><p>或</p><p>是</p><p>小</p><p>感</p><p>悟</p></div></div><div id="aside-block"><div id="toc-div"><h1>INDEX</h1><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li></ol></div></div></div><footer><nobr>published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{new Valine({
+ el: '#Valine'
+ , appId: 'fvW1eWgLvTdXfECCW1Bu9g6J-gzGzoHsz'
+ , appKey: 'stD8FmxHNFFxhkzXholoBHdq' , placeholder: '此条评论委托企鹅物流发送'
+});code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>
